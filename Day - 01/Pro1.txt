@@ -1,0 +1,31 @@
+
+//Turn off the command echoing, hide the command execution
+@echo off  
+
+//Displays the current user's username
+echo username:%username%
+
+//Displays the windows version
+ver
+
+//Set the text color in cmd to white
+color 7
+
+//Displays the current time
+time
+
+//Displays the current date
+date
+
+//Lists files in wide format
+dir /w
+
+//Get the user input for age
+set /p Age=How old are you? 
+
+//Displays the age
+//%Age% is the input age from user
+echo You are %Age% years old.
+
+//Keeps the window open until the user presses a key
+pause
