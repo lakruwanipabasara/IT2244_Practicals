@@ -1,0 +1,59 @@
+//From this direcories and subdirectories created inside this .bat file saved folder as Criterias and Standard directories
+
+//Creates the Criteria_1 directory
+mkdir Criteria_1
+
+//Move inside to the Criteria_1 directory
+cd Criteria_1
+
+//Creates the Standard directories inside the Criteria_1 directory
+mkdir Standard_1
+mkdir Standard_2
+mkdir Standard_3
+mkdir Standard_4
+mkdir Standard_5
+
+//Move back from the Criteria_1 directory to .bat file saved directory
+cd..
+
+//Creates the Criteria_2 directory
+mkdir Criteria_2
+
+//Move inside to the Criteria_2 directory
+cd Criteria_2
+
+//Creates the Standard directories inside the Criteria_1 directory
+mkdir Standard_1
+mkdir Standard_2
+mkdir Standard_3
+
+//Move back from the Criteria_2 directory to .bat file saved directory
+cd..
+
+//Creates the Criteria_3 directory
+mkdir Criteria_3
+
+//move inside to the Criteria_3 directory
+cd Criteria_3
+
+//Creates the Standard directories inside the Criteria_3 directory
+mkdir Standard_1
+mkdir Standard_2
+mkdir Standard_3
+mkdir Standard_4
+
+//Move back from the Criteria_3 directory to .bat file saved directory
+cd..
+
+//Creates the Criteria_4 directory
+mkdir Criteria_4
+
+//Move inside to the Criteria_4 directory
+cd Criteria_4
+
+//Creates the Standard directories inside the Criteria_4 directory
+mkdir Standard_1
+mkdir Standard_2
+
+//Move back from the Criteria_4 directory to .bat file saved directory
+cd..
