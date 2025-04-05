@@ -1,0 +1,55 @@
+Open the putty and enter the host name : 127.16.140.150 then click Ok.
+When get the login as in terminal window enter the registration number(eg:2021/ict/124) then enter the Enter key.
+Enter the password: 789*asd 
+
+//Create new empty file 
+touch abc.csv
+
+//Used to edit the abc.csv file
+vi abc.csv
+
+//After entering vi command press the "i" key.
+//After entering the data and press ctrl+c(save) -> shift+: -> wq!
+
+//Display file content
+more abc.csv
+
+//Display file content allowing scrolling
+less abc.csv
+
+//Gives the number of rows(lines) in the abc.csv file
+wc -l abc.csv 
+
+//Display the first 3 lines(rows) in the file
+head -3 abc.csv  
+
+//Display the last 2 rows in the file
+tail -2 abc.csv
+
+//Extract the 1st and 3rd column from the abc.csv
+cut -f 1,3 abc.csv
+
+//If the comma used as delimeter extract the 1st and 3rd column
+cut -d ',' -f 1,3 abc.csv 
+
+//Extract the 1st and 2nd column and save it into new file named abc1.csv
+cut -d ',' -f 1,2 abc.csv > abc1.csv
+ 
+//To display 1st and 2nd column that extracted in abc.csv
+more abc1.csv 
+
+//List all the files including hidden files also
+ls -a  
+
+//List the files in the current directory
+ls -ltr 
+
+//Gives the all files with .csv extension 
+find *.csv 
+
+//Gives the all files that contain c in file name
+find *c*
+
+//Set the permission
+chmod 777 abc.csv
+
