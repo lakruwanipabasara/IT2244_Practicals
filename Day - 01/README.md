@@ -8,3 +8,4 @@ Operating Systems - Practical Sessions
 ![SS2](https://github.com/user-attachments/assets/c91648fa-9055-4fb5-b239-147234a369c9)
 
 
+![SS](https://github.com/user-attachments/assets/90b5637e-ee1d-4be6-ad2e-276cc40b7b0c)
