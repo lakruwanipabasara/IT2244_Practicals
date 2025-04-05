@@ -1,28 +1,19 @@
-# IT2234_Practicals
-Web Services and Server Technologies - Practical Sessions
+# IT2244_Practicals
+Operating Systems - Practical Sessions
 
-(01)Print "Hello"
+01)Enter the birthyear and get the age
 
-<img width="500" alt="Intro" src="https://github.com/user-attachments/assets/c2907484-adc1-42c4-82e1-8547d2abfb9e" />
+![ss1](https://github.com/user-attachments/assets/cba02660-5975-486e-88b1-92e7d84c8783)
 
+02)Display the month of current date.
 
-(02)Arithmetic Operations
+![ss2](https://github.com/user-attachments/assets/f93756d9-6c89-466d-9b63-92290ca15027)
 
-<img width="499" alt="Operators" src="https://github.com/user-attachments/assets/d433e18c-c3c6-4020-b14a-06baa418b55f" />
+03)Display the year, month, date and dayname separately of the current date
 
+![ss3](https://github.com/user-attachments/assets/6c877b58-c7f6-48c0-b6c2-b4155435f939)
 
-(03)Loops
+04)Linux Commands
 
-(1)Print numbers from 1 to 10
-
-(2)Print only odd numbers
-
-(3)Print numbers in reverse
-
-(4)Reverse numbers in left and right
-
-<img width="480" alt="Loop" src="https://github.com/user-attachments/assets/a0a7638d-2e87-499a-8e81-e22f8edef51c" />
-
-
-
+![ss4](https://github.com/user-attachments/assets/551346f1-1cf2-4f16-8f18-d5c62fde1812)
 
