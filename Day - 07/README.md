@@ -16,6 +16,8 @@ Q3. Print the integers from 1 to 10 using while loop.
 
 ![SS3](https://github.com/user-attachments/assets/936eaa1c-5a82-49d3-a24a-b200e5741e0d)
 
+Q4. Print the below patterns using nested loop.
+
 
 ![SS4](https://github.com/user-attachments/assets/86b886eb-7f47-4195-9f5b-33cddadf43d8)
 
