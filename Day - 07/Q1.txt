@@ -1,1 +1,50 @@
-Write a code for small astrology based on your life path number for that get date of birth from user then calculate life path number.(use switch case)
+Q1. Write a code for small astrology based on your life path number for that get date of birth from user then calculate life path number. (use switch case)
+
+Ex:
+ Calculation for life path number:
+   a=date%10
+   b=date/10
+   c=a+b
+
+if life path number:
+1:Lucky
+2:Careful do your work
+3:Storager
+4:Happy
+5:Can get help
+6:Doubt
+7:Sad
+8:Like
+9:Courage
+
+[paba@MSI ~]$ touch date.sh
+[paba@MSI ~]$ vi date.sh
+
+  echo "Enter Your birth date: "
+	read date
+
+	a=$(($date%10))
+	b=$(($date/10))
+	c=$(($a+$b))
+
+	d=$(($c%10))
+	e=$(($c/10))
+	f=$(($d+$e))
+
+	case $f in
+	1)echo "Lucky";;
+	2)echo "Carefully do your work";;
+	3)echo "Stronger";;
+	4)echo "Happy";;
+	5)echo "Can get help";;
+	6)echo "Doubt";;
+	7)echo "Sad";;
+	8)echo "Like";;
+	9)echo "Courage";;
+	esac
+
+[paba@MSI ~]$ chmod 777 date.sh
+[paba@MSI ~]$ ./date.sh
+Enter Your birth date:
+14
+Can get help
