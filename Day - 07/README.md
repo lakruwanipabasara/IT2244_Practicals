@@ -6,6 +6,8 @@ Q1. Write a code for small astrology based on your life path number for that get
 
 ![SS1](https://github.com/user-attachments/assets/25513e6b-468d-4711-ab5e-b619f699016f)
 
+Q2. Give list of numbers then calculate the summation and multiplication using for loop.
+
 
 ![SS2](https://github.com/user-attachments/assets/53d3ee44-c514-4b32-9331-fa90bb5891e9)
 
