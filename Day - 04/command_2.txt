@@ -1,2 +1,60 @@
 ls
-//Lists the files in the current directory
+//List files in the current directory
+
+vi new.sh
+//Opens the vi editor to create or edit a file named new.sh
+
+chmod 777 new.sh
+Gives full permissions (read, write, execute) to everyone. Owner, group, and others can all read/write/execute the script.
+
+./new.sh
+//executes the shell script named new.sh
+
+echo "Pabasara"
+read name
+echo "Hi" $name
+
+// Read two numbers from user and print.
+// addition, subtraction, multiplication and division.
+
+echo "Enter Number 1"
+read a
+echo "Enter Number 2"
+read b
+
+sum=$(($a+$b))
+sub=$(($a-$b))
+mul=$(($a*$b))
+div=$(($a/$b))
+
+echo "Summation: "$sum
+echo "Subtraction: "$sub
+echo "Multiplication: "$mul
+echo "Division: "$div
+
+ctrl+c 
+//Ctrl + C stops the current running process 
+
+:wq!
+//:wq! means "force save the file and quit"
+
+
+//OUTPUTS
+
+[paba@MSI ~]$ ls
+abc.csv  abc.tsv  abc1.csv  new.csv  xyz.csv
+
+[paba@MSI ~]$ vi new.sh
+[paba@MSI ~]$ chmod 777 new.sh
+[paba@MSI ~]$ ./new.sh
+Pabasara
+
+Hi
+Enter Number 1
+4
+Enter Number 2
+2
+Summation: 6
+Subtraction: 2
+Multiplication: 8
+Division: 2
