@@ -1,1 +1,217 @@
 01) Get the calendar and date.
+
+cal
+
+// OUTPUT
+[2021ict124@fedora ~]$ cal 
+     April 2025
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30
+
+date
+[paba@MSI ~]$  date
+Tue Apr 29 16:09:10 +0530 2025
+
+02) Get the student name and marks for the 3 subjects from user and then calculate the total and average.
+
+Output:-
+	Enter the name: Isuru
+	Enter the mark for subject1:70
+	Enter the mark for subject2:80
+	Enter the mark for subject3:90
+	Total:240
+  Average:80
+
+[paba@MSI ~]$ touch q2.sh
+[paba@MSI ~]$ vi q2.sh
+
+echo "Enter the Name: "
+read name
+echo "Enter the mark for Subject 1 : "
+read m1
+echo "Enter the mark for Subject 2 : "
+read m2
+echo "Enter the mark for Subject 3 : "
+read m3
+echo "Total =" $((m1+m2+m3))
+echo "Average = "  $(((m1+m2+m3)/3))
+
+[paba@MSI ~]$ chmod 777 q2.sh
+[paba@MSI ~]$ ./q2.sh
+Enter the Name:
+Pabasara
+Enter the mark for Subject 1 :
+70
+Enter the mark for Subject 2 :
+80
+Enter the mark for Subject 3 :
+90
+Total = 240
+Average =  80
+
+03) Create calculator with arithmetic operators
+
+Output:
+Enter the first number:4
+Enter the second number:2
+Summation:6
+Subtraction:2
+Division:2
+Multiplication:8
+
+
+[paba@MSI ~]$  touch cal.sh
+[paba@MSI ~]$ vi cal.sh
+
+echo "Enter the first number: "
+read n1
+echo "Enter the second number: "
+read n2
+echo "Summation: " $((n1+n2))
+echo "Subtraction: " $((n1-n2))
+echo "Multiplication: " $((n1*n2))
+echo "Division: " $((n1/n2))
+
+[paba@MSI ~]$ chmod 777 cal.sh
+[paba@MSI ~]$ ./cal.sh
+Enter the first number:
+4
+Enter the second number:
+2
+Summation:  6
+Subtraction:  2
+Multiplication:  8
+Division:  2
+
+04) Get the days based on the user input number
+
+Output:
+Enter the number:5
+Friday
+Enter the number : 9
+Invalid
+
+[paba@MSI ~]$ touch q4.sh
+[paba@MSI ~]$ vi q4.sh
+
+echo "Enter the number:"                  
+read num                                   
+case $num in                              
+  1) echo "Monday" ;;
+  2) echo "Tuesday" ;;
+  3) echo "Wednesday" ;;
+  4) echo "Thursday" ;;
+  5) echo "Friday" ;;
+  6) echo "Saturday" ;;
+  7) echo "Sunday" ;;
+  *) echo "Invalid." ;;
+esac
+
+[paba@MSI ~]$  chmod 777 q4.sh
+[paba@MSI ~]$ ./q4.sh
+
+[paba@MSI ~]$  chmod 777 q4.sh
+[paba@MSI ~]$ ./q4.sh
+Enter the number:
+5
+Friday
+[paba@MSI ~]$ ./q4.sh
+Enter the number:
+9
+Invalid.
+
+05) Verify whether your user name is correct or not.(use your name as in your input)
+
+Output:-
+	Enter username:
+	Mino
+	Username is correct
+	Enter username:
+	Pasi
+	Username is incorrect
+
+[paba@MSI ~]$ touch q5.sh
+[paba@MSI ~]$ vi q5.sh
+
+echo "Enter username: "
+read username
+
+if [ "$username" == "Mino" ]; then
+    echo "Username is correct."
+else
+    echo "Username is incorrect."
+fi
+
+[paba@MSI ~]$ chmod 777 q5.sh
+[paba@MSI ~]$ ./q5.sh
+Enter username:
+Mino
+Username is correct.
+
+06) Enter two numbers and find the max.
+
+Output:- 
+	Enter two numbers:
+	7 5 
+	7 is greater than 5
+	
+	Output:- 
+	Enter two numbers:
+	1 9
+	1 is less than 9
+
+[paba@MSI ~]$ touch q6.sh
+[paba@MSI ~]$ vi q6.sh
+
+echo "Enter two numbers: "
+read n1
+read n2
+if [ "$n1" -gt  "$n2" ]; then
+    echo $n1 " is greater than " $n2
+else
+    echo $n1 " is less than " $n2
+fi
+
+[paba@MSI ~]$ chmod 777 q6.sh
+[paba@MSI ~]$ ./q6.sh
+Enter two numbers:
+7
+5
+7  is greater than  5
+
+Enter two numbers:
+1
+9
+1  is less than  9
+
+07) Create simple calculator using "expr" command same as the Question 3
+
+[paba@MSI ~]$ ./q6.sh[paba@MSI ~]$ touch q7.sh
+[paba@MSI ~]$ vi q7.sh
+
+sum=$(expr $num1 + $num2)                       
+sub=$(expr $num1 - $num2)  
+div=$(expr $num1 / $num2)  
+mul=$(expr $num1 \* $num2)  
+
+# Display results
+echo "Summation:$sum"
+echo "Subtraction:$sub"
+echo "Division:$div"
+echo "Multiplication:$mul"
+
+[paba@MSI ~]$ chmod 777 q7.sh
+[paba@MSI ~]$ ./q7.sh
+Enter the number 1:
+4
+Enter the number 2:
+2
+Summation:6
+Subtraction:2
+Division:2
+Multiplication:8
+
