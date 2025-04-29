@@ -9,7 +9,6 @@ Operating Systems - Practical Sessions
 ![SS3](https://github.com/user-attachments/assets/dba297e2-9831-49f1-b069-6a0bc108bac7)
 
 ![SS4](https://github.com/user-attachments/assets/5e90fbd0-b2d6-44d4-b36c-6e1b97c43f12)
-
 ![SS5](https://github.com/user-attachments/assets/b438b4f4-3363-4180-bd4f-94fc8a3e487e)
 
 
