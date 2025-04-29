@@ -1,0 +1,47 @@
+ls -ltr 
+//Shows file details like size, date, and permissions.
+
+cal
+//displays a calendar
+
+pwd
+//print working directory, It shows the full path of your current location in the file system.
+
+date +%d
+//Day of the month (2 digits)
+
+date +%D
+//Date in MM/DD/YY format
+
+date +%y
+//Last two digits of the year
+
+date +%Y
+//Full year
+
+date +%a
+//Abbreviated weekday name
+
+date +%A
+//Full weekday name
+
+date +%B
+//Full month name
+
+date +%h 
+//Abbreviated month name (same as %b)
+
+date +%H
+//Hour (24-hour format, 00–23)
+
+date +%m
+//Month (2 digits)
+
+date +%M
+//Minute (2 digits)
+
+date +%R
+//Time in HH:MM (24-hour format)
+
+date +%p
+//AM or PM
