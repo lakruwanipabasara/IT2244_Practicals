@@ -23,7 +23,7 @@ cut -d ',' -f 1 new.csv
 //Give the 3rd row data
 head -n3 new.csv | tail -n1  
 
-//Give the rows that contain '11' (-n7 is the number of rows in file)
+//Give the rows that contain '22' (-n7 is the number of rows in file)
 head -n7 new.csv | grep '22' 
 
 head -n3 new.csv | tail -n1
