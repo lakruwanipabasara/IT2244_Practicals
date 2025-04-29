@@ -1,0 +1,2 @@
+ls -ltr 
+//Shows file details like size, date, and permissions.
