@@ -1,8 +1,11 @@
 # IT2244_Practicals
 Operating Systems - Practicals
 
+01) Get the calendar and date.
+
 ![SS1](https://github.com/user-attachments/assets/30612e49-6104-413d-9419-47ff643eded7)
 
+02) Get the student name and marks for the 3 subjects from user then calculate the total and average.
 
 ![SS2](https://github.com/user-attachments/assets/49beb068-e8b8-46d8-90c9-49e6647ef9b4)
 
