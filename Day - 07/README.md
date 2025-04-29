@@ -11,6 +11,8 @@ Q2. Give list of numbers then calculate the summation and multiplication using f
 
 ![SS2](https://github.com/user-attachments/assets/53d3ee44-c514-4b32-9331-fa90bb5891e9)
 
+Q3. Print the integers from 1 to 10 using while loop.
+
 
 ![SS3](https://github.com/user-attachments/assets/936eaa1c-5a82-49d3-a24a-b200e5741e0d)
 
