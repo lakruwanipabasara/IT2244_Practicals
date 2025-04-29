@@ -1,6 +1,9 @@
 # IT2244_Practicals
 Operating Systems - Practicals
 
+Q1. Write a code for small astrology based on your life path number for that get date of birth from user then calculate life path number. (use switch case)
+
+
 ![SS1](https://github.com/user-attachments/assets/25513e6b-468d-4711-ab5e-b619f699016f)
 
 
