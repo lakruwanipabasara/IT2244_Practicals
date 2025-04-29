@@ -24,33 +24,7 @@ cut -d ',' -f 1 new.csv
 head -n3 new.csv | tail -n1  
 
 //Give the rows that contain '11' (-n7 is the number of rows in file)
-head -n7 new.csv | grep '11' 
+head -n7 new.csv | grep '22' 
 
-//Tab separeted file
-//Create new2.csv file
-touch new2.csv 
-
-//Used to enter data into file
-vi new2.csv 
-
-//After entering vi command press the "i" key.
-//Then can enter data in terminal window(can use commas,tab to separate data from each)
-//After entering all data press ctrl+c then :wq!
-
-//View the data in new2.csv file
-more new2.csv 
-
-//Cut and show 1st column in tab separated file
-cut -d $'\t' -f1 new2.csv 
-
-//Give the 3rd row data
-head -n3 new2.csv | tail -n1  
-
-//Display the number of columns in tab separated file
-awk -F '\t' '{print NF; exit}' new2.csv 
-
-//Give the rows that contain '62'
-head -n6 new2.csv | grep '62' 
-
-
-
+head -n3 new.csv | tail -n1
+// Shows the 3rd line of new.csv.
