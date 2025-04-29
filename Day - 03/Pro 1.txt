@@ -4,9 +4,8 @@ touch new.csv
 //Used to enter data into file
 vi new.csv 
 
-//After entering vi command press the "i" key.
-//Then can enter data in terminal window(can use commas,tab to separate data from each)
-//After entering all data press ctrl+c then :wq! (to exit editing)
+//After entering vi command press the "i" key. Then can enter data in terminal window.
+//After entering all data to exit press ctrl+c and then :wq! 
 
 //View the data in new.csv file
 more new.csv 
