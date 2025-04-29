@@ -1,0 +1,120 @@
+Q4. Print the below patterns using nested loop.
+
+(I)
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+* * * * * * *
+
+(II)
+* * * * * * *
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+
+(III)
+1
+2 2
+3 3 3 
+4 4 4 4 
+5 5 5 5 5 5 
+6 6 6 6 6 6 6
+
+(IV)
+1
+1 2 
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+
+(V) 
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+
+
+[paba@MSI ~]$ touch pattern.sh
+[paba@MSI ~]$ vi pattern.sh
+
+echo 'Enter number of Rows: '      
+read rows
+echo 'Enter number of Columns: '
+read cols
+
+(I)
+for ((i=1; i<=rows; i++))
+do
+for ((j=1; j<=i; j++))
+do
+echo -n '* '           
+done
+echo ''                
+done
+
+echo " "
+
+
+(II) 
+for ((i=1; i<=rows; i++))
+do
+for ((j=cols+1; j>i; j--))
+do
+echo -n '* '         
+done
+echo ''              
+done
+
+echo " "
+
+
+(III) 
+for ((i=1; i<=rows; i++))
+do
+for ((j=1; j<=i; j++))
+do
+echo -n $i " "     
+done
+echo ''
+done
+
+echo " "
+
+(IV)
+for ((i=1; i<=rows; i++))
+do
+for ((j=1; j<=i; j++))
+do
+echo -n $j " "     
+done
+echo ''
+done
+
+echo " "
+
+(V) 
+for ((i=1; i<=rows; i++))
+do
+    for ((k=1; k<=rows-i; k++))
+    do
+        echo -n " "   
+    done
+
+    for ((j=1; j<=i; j++))
+    do
+        echo -n "* "   
+    done
+
+    echo ""
+done
+
+
+
