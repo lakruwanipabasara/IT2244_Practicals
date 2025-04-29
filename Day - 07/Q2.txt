@@ -1,0 +1,28 @@
+Q2. Give list of numbers then calculate the summation and multiplication using for loop.
+
+Example:
+1 2 3 4 5 
+
+Summation:15
+Multiplication:120
+
+[paba@MSI ~]$ touch listnum.sh
+[paba@MSI ~]$ vi listnum.sh
+
+sum=0
+mul=1
+
+for number in 1 2 3 4 5
+do
+sum=$(($sum+$number))
+mul=$(($mul*$number))
+done
+
+echo "Summation: " $sum
+echo "Multiplication: " $mul
+
+[paba@MSI ~]$ chmod 777 listnum.sh
+[paba@MSI ~]$ ./listnum.sh
+Summation:  15
+Multiplication:  120
+[paba@MSI ~]$
