@@ -1,28 +1,16 @@
-# IT2234_Practicals
-Web Services and Server Technologies - Practical Sessions
+# IT2244_Practicals
+Operating Systems - Practicals
 
-(01)Print "Hello"
+01) Fibonacci series.
 
-<img width="500" alt="Intro" src="https://github.com/user-attachments/assets/c2907484-adc1-42c4-82e1-8547d2abfb9e" />
-
-
-(02)Arithmetic Operations
-
-<img width="499" alt="Operators" src="https://github.com/user-attachments/assets/d433e18c-c3c6-4020-b14a-06baa418b55f" />
+![SS1](https://github.com/user-attachments/assets/4c4962d8-2a70-47bb-80ac-b7ae1b6a8e29)
 
 
-(03)Loops
+02) Factorial.
 
-(1)Print numbers from 1 to 10
-
-(2)Print only odd numbers
-
-(3)Print numbers in reverse
-
-(4)Reverse numbers in left and right
-
-<img width="480" alt="Loop" src="https://github.com/user-attachments/assets/a0a7638d-2e87-499a-8e81-e22f8edef51c" />
+![SS2](https://github.com/user-attachments/assets/344e86a4-7194-4e77-bdd2-2fc3a17fdf86)
 
 
+03) Multiples of 3 between 1 and 50.
 
-
+![SS3](https://github.com/user-attachments/assets/f7910c4f-3a54-4b2f-ae5b-66546f8ad93e)
