@@ -1,0 +1,52 @@
+01) Fibonacci series
+
+// Output: First 10 fibonacci numbers:
+// 0 1 1 2 3 5 8 13 21 34
+
+a=0  // Initialize variables f
+b=1
+
+// Prompt the user to enter a number
+echo "First 10 fibonacci numbers: "
+
+for((i=0;i<=10;i++))
+do                    
+echo $a     // Print the current value of 'a'      
+echo " "
+
+c=$(($a+$b))  // Calculate the next Fibonacci number
+
+a=$b  // Update 'a' and 'b' for the next iteration
+b=$c 
+done 
+
+OUTPUTS :
+
+
+[paba@MSI ~]$ touch fibonacci.sh
+[paba@MSI ~]$ vi fibonacci.sh
+[paba@MSI ~]$ chmod 777 fibonacci.sh
+[paba@MSI ~]$ ./fibonacci.sh
+First 10 fibonacci numbers:
+0
+
+1
+
+1
+
+2
+
+3
+
+5
+
+8
+
+13
+
+21
+
+34
+
+55
+
