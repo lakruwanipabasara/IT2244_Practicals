@@ -1,0 +1,24 @@
+02) Factorial
+
+// Output:Factorial of 5 is:120
+
+echo 'Enter the number:'  
+read num 
+fact=1   // Initialize fact to 1
+for((i=1;i<=num;i++))
+do
+fact=$(($fact*$i))  // Multiply current fact with i 
+done
+
+echo "Factorial of number:$fact" 
+
+
+OUTPUTS:
+
+[paba@MSI ~]$ touch factorial.sh
+[paba@MSI ~]$ vi factorial.sh
+[paba@MSI ~]$ chmod 777 factorial.sh
+[paba@MSI ~]$ ./factorial.sh
+Enter the number:
+5
+Factorial of number:120
