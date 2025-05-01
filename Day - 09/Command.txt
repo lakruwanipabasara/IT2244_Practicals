@@ -1,0 +1,221 @@
+01) Print Multiplication table using for loop
+
+echo "Multiplication table:"
+num=2
+for((i=1; i<=12; i++))
+do
+  // Multiply current number with 2
+  mul=$(($i * $num))
+  // Print the result
+  echo "$i x $num = $mul"
+done
+
+OUTPUT:
+
+[paba@MSI ~]$ touch multipletable.sh
+[paba@MSI ~]$ vi multipletable.sh
+[paba@MSI ~]$ chmod 777 multipletable.sh
+[paba@MSI ~]$ ./multipletable.sh
+Multiplication table:
+1 x 2 = 2
+2 x 2 = 4
+3 x 2 = 6
+4 x 2 = 8
+5 x 2 = 10
+6 x 2 = 12
+7 x 2 = 14
+8 x 2 = 16
+9 x 2 = 18
+10 x 2 = 20
+11 x 2 = 22
+12 x 2 = 24
+
+02) 
+
+(I)
+        *
+       *** 
+      *****
+     *******
+    *********
+     *******
+      *****
+       ***
+        *
+
+(II)
+      *****
+      *   *
+      *   *
+      *   *
+      *****
+
+(I) 
+// Program to print a diamond pattern
+
+rows=5  // Total number of rows for the upper half
+
+// Top half of the diamond
+for((i=1; i<=rows; i++))
+do
+  // Print spaces before stars
+  for((j=i; j<rows; j++))
+  do
+    echo -n " "
+  done
+  // Print stars
+  for((k=1; k<=((2*i-1)); k++))
+  do
+    echo -n "*"
+  done
+  // Move to the next line
+  echo
+done
+
+// Bottom half of the diamond
+for((i=rows-1; i>=1; i--))
+do
+  // Print spaces before stars
+  for((j=rows; j>i; j--))
+  do
+    echo -n " "
+  done
+  // Print stars
+  for((k=1; k<=((2*i-1)); k++))
+  do
+    echo -n "*"
+  done
+  // Move to the next line
+  echo
+done
+
+OUTPUT:
+
+[paba@MSI ~]$ touch pattern1.sh
+[paba@MSI ~]$ vi pattern1.sh
+[paba@MSI ~]$ chmod 777 pattern1.sh
+[paba@MSI ~]$ ./pattern1.sh
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+(II)
+
+// Program to print a hollow square pattern
+
+for((i=1; i<=5; i++))
+do
+  for((j=1; j<=5; j++))
+  do
+    // Print '*' on borders only
+    if [ $i -eq 1 ] || [ $i -eq 5 ] || [ $j -eq 1 ] || [ $j -eq 5 ]
+    then
+      echo -n "*"
+    else
+      echo -n " "
+    fi
+  done
+  // Move to next line after each row
+  echo
+done
+
+OUTPUT:
+
+[paba@MSI ~]$ touch pattern2.sh
+[paba@MSI ~]$ vi pattern2.sh
+[paba@MSI ~]$ chmod 777 pattern2.sh
+[paba@MSI ~]$ ./pattern2.sh
+*****
+*   *
+*   *
+*   *
+*****
+[paba@MSI ~]$
+
+
+03) 
+
+// Program to print Fibonacci series and calculate the sum
+// 0 1 1 2 3 5 8 13 21 34
+Sum of first 10 fibonacci numbers:88
+
+// Read the number of terms from the user
+echo "Enter the number: "
+read num
+echo
+
+// Initialize first two numbers
+a=0
+b=1
+sum=0
+
+echo "Fibonacci Series:"
+
+for((i=0; i<num; i++))
+do
+  // Print the current number
+  echo -n "$a "
+  // Add the current number to sum
+  sum=$(($sum + $a))
+  // Generate next number
+  c=$(($a + $b))
+  a=$b
+  b=$c
+done
+
+// Print a newline
+echo
+// Display the sum of Fibonacci numbers
+echo "Sum of the first $num Fibonacci numbers is: $sum"
+
+OUTPUT:
+
+[paba@MSI ~]$ touch fibos.sh
+[paba@MSI ~]$ vi fibos.sh
+[paba@MSI ~]$ chmod 777 fibos.sh
+[paba@MSI ~]$ ./fibosh.sh
+-bash: ./fibosh.sh: No such file or directory
+[paba@MSI ~]$ ./fibos.sh
+Enter the number:
+10
+
+Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34
+Sum of the first 10 Fibonacci numbers is: 88
+
+04) 
+
+// Program to find and sum all prime numbers between 1 and 100
+
+sum=0  // Initialize sum to 0
+
+// Loop through numbers from 2 to 100
+for((i=2; i<=100; i++))
+do
+  prime=1  // Assume number is prime
+
+  // Check if number is divisible by any number other than 1 and itself
+  for((j=2; j<=i/2; j++))
+  do
+    if [ $((i % j)) -eq 0 ]
+    then
+      prime=0  // Not a prime number
+      break
+    fi
+  done
+
+  // If number is prime, add to sum
+  if [ $prime -eq 1 ]
+  then
+    sum=$(($sum + $i))
+  fi
+done
+
+// Display the total sum of prime numbers
+echo "Sum of prime numbers between 1 and 100 is: $sum"
