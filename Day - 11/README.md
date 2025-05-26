@@ -1,28 +1,50 @@
-# IT2234_Practicals
-Web Services and Server Technologies - Practical Sessions
+#Question 01
 
-(01)Print "Hello"
+Using Command Prompt on a Windows system, write the exact commands to complete the following tasks:
 
-<img width="500" alt="Intro" src="https://github.com/user-attachments/assets/c2907484-adc1-42c4-82e1-8547d2abfb9e" />
+• Create New directories named CSC2244 , Marks and Exam on your Desktop.
 
+• Inside the CSC2244 directory, create three subdirectories named practical, theory, and exam papers.
 
-(02)Arithmetic Operations
+• Inside each subdirectories, create a text file, a Word document, and a PowerPoint document
 
-<img width="499" alt="Operators" src="https://github.com/user-attachments/assets/d433e18c-c3c6-4020-b14a-06baa418b55f" />
+respectively:
 
+Eg:
 
-(03)Loops
+Practical →Word document, PowerPoint document, text file
 
-(1)Print numbers from 1 to 10
+• Create two new excel files in desktop named Icae into the directory Marks Marks and Final Exam Marks and move that files
 
-(2)Print only odd numbers
-
-(3)Print numbers in reverse
-
-(4)Reverse numbers in left and right
-
-<img width="480" alt="Loop" src="https://github.com/user-attachments/assets/a0a7638d-2e87-499a-8e81-e22f8edef51c" />
+• Copy the Directory Marks into the Exam directory and hide the Exam directory
 
 
 
 
+#Question 02
+
+Using the data.csv file in your shared drive Do the Questions Given Below.
+
+Filter the rows where the GPA greater than 3.5
+
+Calculate the average GPA of all Students.
+
+
+
+Question 03
+
+Read two Strings from user String
+
+Count the characters of each String and print the lengthy String as shown in the Expected output
+
+Expected output :
+
+Enter String_1
+
+Apple
+
+Enter String_2
+
+Banana
+
+Banana is larger than Apple
