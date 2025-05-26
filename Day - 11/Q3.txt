@@ -1,0 +1,24 @@
+touch q3.sh
+vi q3.sh
+
+echo "enter string_1"
+read str1
+//read -p "Enter string_1: " str1
+echo "enter string_2"
+read str2
+
+# Get the lengths of both strings
+len1=${#str1}
+len2=${#str2}
+
+#compare and print the longer string
+if [ "$len1" -gt "$len2"]; then
+ echo "The longer string is: $str1"
+elseif ["$len2" -gt "$len1"]; then
+ echo "The longer string is: $str2"
+else
+ echo "Both strings are of equal length."
+fi
+
+chmod 777 q3.sh
+./q3.sh
