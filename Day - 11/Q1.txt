@@ -1,0 +1,31 @@
+cd %USERPROFILE%\Desktop
+
+mkdir  CSC2244
+mkdir Marks
+mkdir Exam
+//mkdir CSC2244  Marks Exam
+
+cd  CSC2244
+//mkdir practical theory "exam papers"
+
+mkdir practical,
+mkdir theory,
+mkdir exam
+
+cd practical
+
+echo. >practical.docx
+echo. >practical.txt
+echo. >practical.pptx
+
+//cd..\theory
+
+cd..
+cd exam
+ 
+cd %USERPROFILE%\Desktop
+echo. > "ICAE_marks.xlsx"
+echo. > "Final_Exam_Marks.xlsx"
+
+xcopy /E /I Marks Exam\Marks
+attrib +h Exam
