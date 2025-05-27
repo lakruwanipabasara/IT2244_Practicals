@@ -1,3 +1,8 @@
+# IT2244_Practicals
+
+Operating Systems - Practical Sessions
+
+
 ➤ Question 01
 
 Using Command Prompt on a Windows system, write the exact commands to complete the following tasks:
