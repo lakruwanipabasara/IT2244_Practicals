@@ -314,10 +314,6 @@ int main(){
 }
 
 
-OUTPUT:
-
-
-
 ------------------------------------------------------------------------------------------
 
 Example 4:
@@ -337,9 +333,6 @@ int main() {
     return 0;
 }
 
-OUTPUT:
-
-
 
 ---------------------------------------------------------------------------------------------
 
@@ -350,25 +343,27 @@ The program should take the number of term as input from the user and then displ
 
 CODE:
 
-let num
-echo "Enter the number: "
+#include<stdio.h>
+int main(){
+        int num;
+        printf("Enter a number:");
+        scanf("%d",&num);
 
-read num
-a=0
-b=1
+        int a=0;
+    int b=1;
 
-for((i=0; i<num; i++))
-do
-echo $a
-echo " "
+    printf("Fibonacci Series: %d,%d",a,b);
 
-c=$(($a+$b))
-a=$b
-b=$c
-done
+        for(int i=3;i<=num;i++)
+        {
+                int c=a+b;
+                printf(",%d",c);
+                a=b;
+                b=c;
+        }
+        return 0;
 
-OUTPUT:
-
+}
 
 
 ------------------------------------------------------------------------------------------------
@@ -402,8 +397,6 @@ int main(){
 	return 0;
 }
 
-OUTPUT:
-
 
 
 -----------------------------------------------------------------------------------------------
@@ -436,8 +429,6 @@ int main() {
     return 0;
 }
 
-OUTPUT:
-
 
 --------------------------------------------------------------------------
 
@@ -465,11 +456,6 @@ int main() {
     printf("Decimal equivalent: %d\n", decimal);
     return 0;
 }
-
-
-
-
-OUTPUT:
 
 
 --------------------------------------------------------------------------
@@ -508,4 +494,3 @@ int main() {
 }
 
 
-OUTPUT:
