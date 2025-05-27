@@ -1,28 +1,17 @@
-# IT2234_Practicals
-Web Services and Server Technologies - Practical Sessions
+# IT2244_Practicals
 
-(01)Print "Hello"
+Operating Systems - Practical Sessions
 
-<img width="500" alt="Intro" src="https://github.com/user-attachments/assets/c2907484-adc1-42c4-82e1-8547d2abfb9e" />
+## 01)
 
+Question:
 
-(02)Arithmetic Operations
-
-<img width="499" alt="Operators" src="https://github.com/user-attachments/assets/d433e18c-c3c6-4020-b14a-06baa418b55f" />
-
-
-(03)Loops
-
-(1)Print numbers from 1 to 10
-
-(2)Print only odd numbers
-
-(3)Print numbers in reverse
-
-(4)Reverse numbers in left and right
-
-<img width="480" alt="Loop" src="https://github.com/user-attachments/assets/a0a7638d-2e87-499a-8e81-e22f8edef51c" />
+Parent Process (A)-->Get user inputs for 3 numbers.
+Find the factorial of first number.
+Find the fibonacci of second number.
+Check the third number is prime or not.
 
 
+OUTPUT:
 
-
+![SS ](https://github.com/user-attachments/assets/a13afedc-31e1-493d-985f-22bb33c6a353)
