@@ -41,6 +41,11 @@ Using the data.csv file in your shared drive Do the Questions Given Below.
 -> Calculate the average GPA of all Students.
 
 
+![SS5](https://github.com/user-attachments/assets/5ea9d11c-3699-4837-8adb-f7037c50fc9b)
+
+
+![SS6](https://github.com/user-attachments/assets/25fec491-07fa-4a2c-bc3b-b01918245c2f)
+
 
 
 ➤ Question 03
