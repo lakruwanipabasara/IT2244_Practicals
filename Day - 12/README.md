@@ -17,16 +17,26 @@
 ![SS4](https://github.com/user-attachments/assets/47b8c762-aaea-4db2-b147-9d108d052b4f)
 
 
-# 05) Declare multiple variables in single line
+## 05) Declare multiple variables in single line
 
 ![SS5](https://github.com/user-attachments/assets/17d94a64-181d-42d3-a880-5ea2e2b74b4f)
 
+## 06)
 
-# 07) Double numbers
+![SS7](https://github.com/user-attachments/assets/e7c8dfcf-5f3d-46bb-a9e8-0ba7d1eeb66f)
 
-# 08) Floating numbers
 
-# 11) Take integer input from users
+## 07) Double numbers
+
+![SS8](https://github.com/user-attachments/assets/94e728e9-d860-437e-9e3a-5d4dab9c0b69)
+
+
+## 08) Floating numbers
+
+![SS9](https://github.com/user-attachments/assets/8bd24b3b-2d3f-4ce0-bbc1-9b00f3fa5ed7)
+
+
+## 11) Take integer input from users
 
 ![SS11](https://github.com/user-attachments/assets/c609ce29-ab39-4e6d-b9b1-f450529b2fb7)
 
