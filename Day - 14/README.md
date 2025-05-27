@@ -3,6 +3,7 @@
 Operating Systems - Practical Sessions
 
 // fork() -->copy a process
+
 // pid() -->child process - 0
 
 ## 01) 
