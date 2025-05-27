@@ -1,0 +1,121 @@
+#include<stdio.h>
+#include <unistd.h>
+int main()
+{
+ printf("\nHello world");
+ int f=fork();
+ int p=getpid();
+ 
+ printf("\n the pid is %d",p);
+ printf("\n the fork is %d",f);
+ 
+ return 0;
+}
+
+OUTPUT:
+
+Hello world
+ the pid is 11769
+ the fork is 11770Hello world
+ the pid is 11770
+ the fork is 0
+
+-------------------------------------------------------------
+02)
+
+#include<stdio.h>
+#include<unistd.h>
+int main()
+{
+	int f=fork();
+	if(f==0)
+	{
+		printf("\nI'm Child Process.");
+	}
+	else
+	{
+		 printf("\nI'm Parent Process.");
+	}
+   
+	return 0;
+}
+
+
+OUTPUT:
+
+[2021ict124@fedora ~]$ vi p2.c
+[2021ict124@fedora ~]$ gcc p2.c -o p2
+[2021ict124@fedora ~]$ ./p2
+
+I'm Parent Process.
+I'm Child Process.
+
+------------------------------------------------------------------
+03)
+
+#include<stdio.h>
+#include<unistd.h>
+int main()
+{
+	int f=fork();
+	if(f==0)
+	{
+	   printf("\nI'm child.");
+	   printf("\nMy parent ID %d",getppid());
+	   int f1=fork();
+	   if(f1==0)	
+	     {
+	       printf("\nI'm sibling.");
+           printf("\nMy parent ID is %d",getppid());		   
+	     } 
+		 else
+	     {
+	       printf("\nI'm parent.");
+	     }
+	}
+    
+	return 0;
+}
+
+/////////////////////
+
+#include<stdio.h>
+#include<unistd.h>
+int main()
+{
+	int p = getpid();
+	int f=fork();
+	if(f==0)
+	{
+      printf("I'm child");
+	  printf("My parent ID: %d\n",getppid());
+	}
+	else
+	{
+		int f1=fork();
+		if(f1==0)
+		{
+		   printf("I'm sibling.");
+           printf("My parent ID: %d\n",getppid());	
+		}
+		else
+		{
+			printf("I'm parent.");
+			printf("My ID:%d ,",getppid());
+			printf("My parent ID:is %d\n",getppid());
+		}
+	}
+  return 0;
+}	
+
+OUTPUT:
+
+[2021ict124@fedora ~]$ vi p3.c
+[2021ict124@fedora ~]$ gcc p3.c -o p3
+[2021ict124@fedora ~]$ ./p3
+I'm parent.My ID:4669 ,My parent ID:is 4669
+I'm childMy parent ID: 26122
+I'm sibling.My parent ID: 26122
+
+
+-----------------------------------------------------------------------------
