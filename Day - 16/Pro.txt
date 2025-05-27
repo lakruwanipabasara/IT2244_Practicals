@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int is_prime(int C)
+{
+    if (C < 2) return 0;
+	
+    for (int i = 2; i * i <= C; i++) 
+	{
+        if (C % i == 0)
+            return 0;
+    }
+    return 1;
+}
+
+int main() 
+{
+    int A, B, C;
+	
+    printf("\nEnter three numbers: ");
+    scanf("%d %d %d", &A, &B, &C);
+
+    int f = fork();
+	
+    if (f == 0) 
+	{ 
+        int fact = 1;
+        for (int i = 1; i <= A; i++) 
+		{
+            fact *= i;
+        }
+		
+        printf("Factorial of %d: %d\n", A, fact);
+		
+    } 
+	else 
+	{
+        int f1 = fork();
+		
+        if (f1 == 0) 
+		{ 
+            int a = 0, b = 1, c;
+			
+            printf("Fibonacci series up to %d:\n", B);
+			
+            for (int i = 1; i <= B; i++) 
+			{
+                c = a + b;
+                a = b;
+                b = c;
+                printf("%d ", c);
+            }
+			
+            printf("\n");
+			
+        } 
+		else 
+		{ 
+            printf("Prime numbers up to %d:\n",C);
+			
+            for (int i = 2; i <= C; i++) 
+			{
+                if (is_prime(i)) 
+				{
+                    printf("%d ", i);
+                }
+            }
+			
+            printf("\n");
+        }
+    }
+    return 0;
+}
