@@ -1,28 +1,27 @@
-# IT2234_Practicals
-Web Services and Server Technologies - Practical Sessions
+# IT2244_Practicals
 
-(01)Print "Hello"
+Operating Systems - Practicals
 
-<img width="500" alt="Intro" src="https://github.com/user-attachments/assets/c2907484-adc1-42c4-82e1-8547d2abfb9e" />
+## 01)
 
-
-(02)Arithmetic Operations
-
-<img width="499" alt="Operators" src="https://github.com/user-attachments/assets/d433e18c-c3c6-4020-b14a-06baa418b55f" />
+![SS 1](https://github.com/user-attachments/assets/f290e9f9-f73f-45f9-9759-a4e9259b7952)
 
 
-(03)Loops
+## 02)
 
-(1)Print numbers from 1 to 10
-
-(2)Print only odd numbers
-
-(3)Print numbers in reverse
-
-(4)Reverse numbers in left and right
-
-<img width="480" alt="Loop" src="https://github.com/user-attachments/assets/a0a7638d-2e87-499a-8e81-e22f8edef51c" />
+![SS 2](https://github.com/user-attachments/assets/9fb27a47-3512-4c86-b79d-e72e858e52a9)
 
 
+## 03)
+
+![SS3](https://github.com/user-attachments/assets/85c1194b-1b44-411b-8fd3-dbca34d18d2b)
 
 
+## 04)
+
+![SS4](https://github.com/user-attachments/assets/f2b4c319-f37c-46ac-a3d8-e30311568a76)
+
+
+## 05)
+
+![SS5](https://github.com/user-attachments/assets/7a753794-c2b2-4791-bcb6-d04c50568048)
