@@ -1,0 +1,511 @@
+#####if else
+	
+if(condition) {
+  //body of if statement;
+}
+
+else
+{
+ //body of else statement
+}
+
+
+Example: Enter your age and verify your aligible or not for election voting
+using if else condition.
+
+CODE :
+
+#include<stdio.h>
+int main()
+{
+	int age;
+	printf("Enter your age:");
+	scanf("%d",&age);
+	if(age>=18)
+	{
+		printf("You are Eligible.");
+	}
+	else
+	{
+		printf("You are not Eligible.");
+	}
+	return 0;
+}
+
+OUTPUT:
+
+[2021ict124@fedora ~]$ vi vote.c
+[2021ict124@fedora ~]$ gcc vote.c -o vote
+[2021ict124@fedora ~]$ ./vote
+Enter your age:24
+You are Eligible.
+
+------------------------------------------------------------
+
+########Ternary Operator
+
+test_condition ? expression1 : expression2;
+
+CODE:
+
+#include<stdio.h>
+int main()
+{
+	int age;
+	printf("Enter your age:");
+	scanf("%d",&age);
+	age>=18 ? printf("You are Eligible.") : printf("You are not Eligible.\n");
+	return 0;
+
+}
+
+OUTPUT:
+
+[2021ict124@fedora ~]$ vi vote2.c
+[2021ict124@fedora ~]$ gcc vote2.c -o vote2
+[2021ict124@fedora ~]$ ./vote2
+Enter your age:24
+You are Eligible.
+
+-----------------------------------------------------------------
+
+####switch operator 
+switch(variable/expression)
+{
+	case 1:
+	 //body of case 1
+	 break;
+	case 2;
+	 //body of case 2
+	 break;
+	 
+	case n:
+	 //body of case namespace
+	 break;
+	 
+	default:
+	 //body of default
+}
+
+Example 1: 
+
+Enter the value between 1 to 7 and create a program for following output:
+Enter the number between 1 to 7 : 1
+Today is Monday!
+
+CODE:
+
+#include<stdio.h>
+int main(){
+	int number;
+	printf("\nEnter a number:");
+	scanf("%d",&number);
+	
+	switch(number){
+	case 1:
+	printf("Today is Monday!");
+	break;
+	
+	case 2:
+	printf("Today is Tuesday!");
+	break;
+	
+	case 3:
+	printf("Today is Wednesday!");
+	break;
+	
+	case 4:
+	printf("Today is Thursday!");
+	break;
+	
+	case 5:
+	printf("Today is Friday!");
+	break;
+	
+	case 6:
+	printf("Today is Saturday!");
+	break;
+	
+	case 7:
+	printf("Today is Sunday!");
+	break;
+	
+	default:
+	printf("Invalid input. Enter a valid number.");
+	}
+	return 0;
+}
+
+
+
+OUTPUT:
+
+[2021ict124@fedora ~]$ vi day.c
+[2021ict124@fedora ~]$ gcc day.c -o day
+[2021ict124@fedora ~]$ ./day
+
+Enter a number:3
+Today is Wednesday!
+
+
+-----------------------------------------------------------------------------------------
+
+Example 2:
+
+Write a code for small astrology based on your life path number for that get date of birth from user then calculate life path number.(Use switch case)
+Output:
+ case 1 -Date: 23
+ case 2 -Date: 29
+ 
+ calculation for life path number:
+  a=date%10
+  b=date/10
+  c=a+b
+  
+  in life path number
+  1)"Lucky"
+  2)"Carefully do your work"
+  3)"Strange"
+  4)"Happy"
+  5)"Can get help"
+  6)"Doubt"
+  7)"Sad"
+  8)"Like"
+  9)"Courage"
+  *)"Invalid Input"
+
+
+CODE:
+
+#include<stdio.h>
+int main(){
+	int date;
+	int a;
+	int b;
+	int c;
+	int d;
+	int e;
+	int f;
+	printf("\nEnter a date of birth:");
+	scanf("%d",&date);
+	
+   a=date%10;
+   b=date/10;
+   c=a+b;
+   d=c%10;
+   e=c/10;
+   f=d+e;
+   
+  
+	switch(c){
+		case 1:
+	    printf("Lucky");
+	    break;
+		
+		case 2:
+	    printf("Carefully do your work");
+	    break;
+		
+		case 3:
+	    printf("Strange");
+	    break;
+		
+		case 4:
+	    printf("Happy");
+	    break;
+		
+		case 5:
+	    printf("Can get help");
+	    break;
+		
+		case 6:
+	    printf("Doubt");
+	    break;
+		
+		case 7:
+	    printf("Sad");
+	    break;
+		
+		case 8:
+	    printf("Like");
+	    break;
+		
+		case 9:
+	    printf("Courage");
+	    break;
+		
+		default:
+	    switch(f){
+		case 1:
+	    printf("Lucky");
+	    break;
+		
+		case 2:
+	    printf("Carefully do your work");
+	    break;
+		
+		case 3:
+	    printf("Strange");
+	    break;
+		
+		case 4:
+	    printf("Happy");
+	    break;
+		
+		case 5:
+	    printf("Can get help");
+	    break;
+		
+		case 6:
+	    printf("Doubt");
+	    break;
+		
+		case 7:
+	    printf("Sad");
+	    break;
+		
+		case 8:
+	    printf("Like");
+	    break;
+		
+		case 9:
+	    printf("Courage");
+	    break;
+		
+		default:
+	    printf("Invalid input.");
+	    }
+	    }
+	return 0;
+}
+
+OUTPUT:
+
+[2021ict124@fedora ~]$ vi date.c
+[2021ict124@fedora ~]$ gcc date.c -o date
+[2021ict124@fedora ~]$ ./date
+
+Enter a date of birth:14
+Can get help
+
+----------------------------------------------------------------------------------------
+
+Example 3:
+Give list of numbers then calculate the summation and multiplication using for loop.
+Example:- 1 2 3 4 5
+summation = 15
+multiplication =120
+
+CODE:
+#include<stdio.h>
+int main(){
+	int sum=0;
+	int mul=1;
+	
+	for (int i=1;i<=5;i++)
+	{
+		sum=sum+i;
+		mul=mul*i;
+	}
+	printf("Summation:%d",sum);
+	printf("\n");
+	printf("Multiplication:%d",mul,"\n");
+	return 0;
+}
+
+
+OUTPUT:
+
+
+
+------------------------------------------------------------------------------------------
+
+Example 4:
+
+Print the integers from 1 to 10 using while loop.
+
+CODE:
+
+#include <stdio.h>
+
+int main() {
+    int i = 1;
+    while (i <= 10) {
+        printf("%d ", i);
+        i++;
+    }
+    return 0;
+}
+
+OUTPUT:
+
+
+
+---------------------------------------------------------------------------------------------
+
+
+Example 5:
+Write a c program to generate and print the Fibonacci series up to a specified number of terms.
+The program should take the number of term as input from the user and then display the corresponding Fibonacci sequence.
+
+CODE:
+
+let num
+echo "Enter the number: "
+
+read num
+a=0
+b=1
+
+for((i=0; i<num; i++))
+do
+echo $a
+echo " "
+
+c=$(($a+$b))
+a=$b
+b=$c
+done
+
+OUTPUT:
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+Example 6:
+Write a c program to calculate the factorial of a given non-negative integer.
+
+
+CODE:
+
+#include<stdio.h>
+int main(){
+	int num;
+	printf("Enter the number:");
+	scanf("%d",&num);
+	
+	int factorial=1;
+	if(num<0)
+	{
+		printf("Invalid number,enter a valid number");
+	}
+	else
+	{
+		for(int i=1;i<=num;i++)
+	    {
+		    factorial=factorial*i;
+	    }
+		printf("Factorial:%d",factorial);
+	}
+	return 0;
+}
+
+OUTPUT:
+
+
+
+-----------------------------------------------------------------------------------------------
+
+
+Example 7:
+Write a c program that:
+Accepts two strings as input from the user.
+Concatenates th two strings Displays the concatenated result.
+
+
+CODE:
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[100], str2[100];
+
+    printf("Enter first string: ");
+    scanf("%s", str1);
+
+    printf("Enter second string: ");
+    scanf("%s", str2);
+
+    strcat(str1, str2); // Concatenates str2 to str1
+
+    printf("Concatenated String: %s\n", str1);
+
+    return 0;
+}
+
+OUTPUT:
+
+
+--------------------------------------------------------------------------
+
+
+Example 09:
+
+Write a c program that takes a binary number(as an integer) as input and converts it to its decimal equivalent.
+
+CODE:
+
+#include <stdio.h>
+
+int main() {
+    int binary, decimal = 0, base = 1;
+
+    printf("Enter a binary number: ");
+    scanf("%d", &binary);
+
+    while (binary > 0) {
+        decimal += (binary % 10) * base; // Extract last digit and multiply by power of 2
+        binary /= 10; // Remove last digit
+        base *= 2; // Increase power of 2
+    }
+
+    printf("Decimal equivalent: %d\n", decimal);
+    return 0;
+}
+
+
+
+
+OUTPUT:
+
+
+--------------------------------------------------------------------------
+
+Example 10:
+Write a c program that:
+Accepts an array of integers from the user.
+Finds and displays the maximum and minimum values in the array.
+
+CODE:
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements: ", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int max = arr[0], min = arr[0];
+
+    for (i = 1; i < n; i++) {
+        if (arr[i] > max) max = arr[i];
+        if (arr[i] < min) min = arr[i];
+    }
+
+    printf("Maximum: %d\n", max);
+    printf("Minimum: %d\n", min);
+
+    return 0;
+}
+
+
+OUTPUT:
