@@ -65,5 +65,15 @@ Multiplication:120
 
 ![SS 10](https://github.com/user-attachments/assets/2244ec53-4764-4320-9011-c14bf8264e8f)
 
+## 11) c program to generate Pascal's Triangle.
+
+output:
+
+no of rows:5 1 1 1 1 2 1 1 3 3 1 1 4 6 4 1
+
+![SS 11](https://github.com/user-attachments/assets/4122774c-d001-4e4e-9117-cf8f02dc14b5)
+
+
+
 
 
