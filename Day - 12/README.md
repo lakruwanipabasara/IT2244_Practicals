@@ -1,6 +1,6 @@
 # C Language
 
-## 01) Print 'hello world!'
+## 01) Print 'Hello World!'
 
 ![SS1](https://github.com/user-attachments/assets/9ffd6d96-623d-4051-a9f6-ff08e3115e0e)
 
