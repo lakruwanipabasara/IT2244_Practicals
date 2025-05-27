@@ -50,11 +50,9 @@ Using the data.csv file in your shared drive Do the Questions Given Below.
 
 ➤ Question 03
 
-Read two Strings from user String
+Read two Strings from user String and count the characters of each String and print the lengthy String as shown in the Expected output.
 
-Count the characters of each String and print the lengthy String as shown in the Expected output
-
-Expected output :
+Output :
 
 Enter String_1
 
