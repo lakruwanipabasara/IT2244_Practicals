@@ -1,0 +1,214 @@
+C language------
+
+
+01) Print "Hello world"
+
+#include<stdio.h>
+int main(){
+	printf("Hello World!");
+return 0;
+}
+
+touch pro1.c
+vi pro1.c
+
+//before run
+gcc pro1.c -o pro1 //without extention
+./pro1.c //run
+
+02)
+//variables
+
+int age; //store integer values
+age=25;
+int age=25;
+#include<stdio.h>
+int main(){
+	int age=25;
+	printf(age);
+	//printf("%d",age);
+}
+
+#######################
+
+%d / %i --> integers
+%f / F --> float
+%lf --> double
+%e --> char
+%s --> string
+
+03)
+//assign new value for same variable
+
+#include<stdio.h>
+ int main(){
+ int age =25;
+ printf("%d",age);
+ printf("\nc programming");
+ age=31;
+ printf("\nNew age:%d",age);
+}
+
+
+04)
+#include<stdio.h>
+int main(){
+	int num1=25;
+	printf("\nFirst number:%d",num1);
+	
+	int num2=num1;
+	printf("\nSecond number:%d",num2);
+	return 0;
+}
+
+
+05)
+//declare multiple variables in single line
+
+#include<stdio.h>
+int main()
+{
+	int num1,num2=25;
+	printf("First number:%d",num1);
+	printf("\nSecond number:%d",num2);
+	return 0;
+}
+
+06)
+//variable naming convention
+
+//can't create variable names with space
+//can't start variable names with numbers
+
+
+07)
+
+//data types
+
+#include<stdio.h>
+int main(){
+	int age=10;
+	printf("%d",age);
+	printf("\nSize: %zu", sizeof(age));
+}
+//OUTPUT- 4
+//4 bytes (integer number)
+ 
+
+08)
+
+#include<stdio.h>
+int main(){
+	double number=12.45;
+	printf("%.2flf",number); //12.450000 (6 bytes) 
+	//2f for two decimal
+	printf("\nSize: %zu", sizeof(number));
+}
+
+
+09)
+
+//floating numbers
+
+#include<stdio.h>
+int main(){
+	float number1=10.9f;
+	printf("%f",number1); // output = 10.900000
+	printf("\n%.1f",number1); //output = 10.9
+	return 0;
+}
+
+10)
+
+//Characters
+
+#include<stdio.h>
+int main(){
+	char gender='m';
+}
+
+11)
+  
+//take input from users
+
+#include<stdio.h>
+int main(){
+	int age;
+	printf("Enter your age:");
+	//printf("%d",age);
+	scanf("%lf", &age); // &--> ampasan
+	printf("Age:%d",age);
+	return 0;
+}
+
+
+
+12)
+
+//take double and char input from users
+
+#include<stdio.h>
+int main()
+{
+	double number;
+	char alpha;
+	printf("Enter double number:");
+	scanf("%f", &number);
+	printf("\nYour double input is:%f",number);
+	
+	printf("Enter char number:");
+	scanf("%c", &alpha);
+	printf("\nYour char input is:%c",alpha);
+	return 0;
+}
+
+
+13)
+
+//take multiple input together
+
+double number;
+char alpha;
+printf("Enter inputs:");
+scanf("%lf %c", &number,&alpha);
+
+
+14)
+
+//comments
+
+// - single line commemts ctrl+/
+/* */ - multiple comments ctrl+shift+/
+
+
+15)
+
+// c operators
+arithmetic operators
++ 
+-
+*
+/
+% --> remainder
+++
+
+
+#include<stdio.h>
+int main()
+{
+  int num1;
+  printf("Enter your First number:");
+  scanf("%d", &num1);
+  
+  int num2;
+  printf("Enter your Second number:");
+  scanf("%d", &num2);
+  
+  printf("Summation: %d", num1+num2);
+  printf("\nSubstraction: %d", num1-num2);
+  printf("\nMultiplication: %d", num1*num2);
+  printf("\nDivision: %d", num1/num2);
+  printf("\nRemainder: %d", num1%num2);
+  
+  return 0;
+}
