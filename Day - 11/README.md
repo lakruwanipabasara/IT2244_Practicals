@@ -65,3 +65,6 @@ Enter String_2
 Banana
 
 Banana is larger than Apple
+
+
+![SS7](https://github.com/user-attachments/assets/854b2137-2e33-4182-b109-2a4391fc22b2)
