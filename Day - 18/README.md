@@ -28,4 +28,6 @@ Receiver.c
 -  Deletes the queue with msgctl() after use.
 
 
+## OUTPUT -:
+
 
