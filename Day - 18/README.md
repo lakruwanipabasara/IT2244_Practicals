@@ -30,4 +30,8 @@ Receiver.c
 
 ## OUTPUT -:
 
+![SS1](https://github.com/user-attachments/assets/cb540649-beda-4133-a758-44b2c697bf69)
+
+![SS2](https://github.com/user-attachments/assets/f01cf3ef-6626-4e36-ac65-cc2c955d55c5)
+
 
