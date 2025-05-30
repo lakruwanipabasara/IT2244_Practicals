@@ -25,3 +25,6 @@ Operating Systems - Practicals
 ## 05)
 
 ![SS5](https://github.com/user-attachments/assets/7a753794-c2b2-4791-bcb6-d04c50568048)
+
+## Home Work Question
+
