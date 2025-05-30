@@ -7,7 +7,8 @@ Operating Systems - Practicals
 ## Code Overview:
 
 Sender.c
-🔹 Generates a unique key using ftok().
+
+ Generates a unique key using ftok().
 🔹 Creates a message queue using msgget().
 🔹 Sends a message using msgsnd().
 🔹 Prints confirmation of the sent message.
