@@ -28,3 +28,7 @@ Operating Systems - Practicals
 
 ## Home Work Question
 
+![SS1](https://github.com/user-attachments/assets/9ce3067f-0d5d-459a-9f4c-b87a17a1ae73)
+
+
+
