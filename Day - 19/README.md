@@ -1,28 +1,52 @@
-# IT2234_Practicals
-Web Services and Server Technologies - Practical Sessions
+# IT2244_Practicals
 
-(01)Print "Hello"
+Operating Systems - Practicals
 
-<img width="500" alt="Intro" src="https://github.com/user-attachments/assets/c2907484-adc1-42c4-82e1-8547d2abfb9e" />
+# Private Messaging System with System V Message Queues
 
+## Overview
 
-(02)Arithmetic Operations
+This program demonstrates a private messaging system implemented using System V message queues, ideal for server-side environments where privacy and isolation are essential.
 
-<img width="499" alt="Operators" src="https://github.com/user-attachments/assets/d433e18c-c3c6-4020-b14a-06baa418b55f" />
+## How It Works
 
+- The parent process collects user input (name, registration number, and age).
+ 
+- The message queue transmits the data to the child process.
+  
+- The child process reads the data and displays the received values.
 
-(03)Loops
+  OUTPUT-:
 
-(1)Print numbers from 1 to 10
-
-(2)Print only odd numbers
-
-(3)Print numbers in reverse
-
-(4)Reverse numbers in left and right
-
-<img width="480" alt="Loop" src="https://github.com/user-attachments/assets/a0a7638d-2e87-499a-8e81-e22f8edef51c" />
+![SS2](https://github.com/user-attachments/assets/a7485462-80a1-4431-b344-9bd65b02801d)
+![SS3](https://github.com/user-attachments/assets/89745ed3-9705-4c46-9d38-6e343dc06d85)
 
 
+  
 
+## Exercise
+
+- Parent Process: Sending Data
+
+Enter name: hi 
+
+Enter regno: 2314  
+
+Enter age: 24  
+
+Message sent successfully .
+
+- Child Process: Receiving Data
+
+Received name: hi 
+
+Received regno: 2314
+
+Received age: 24  
+
+
+OUTPUT-:
+
+
+![SS4](https://github.com/user-attachments/assets/66e009c5-7a11-48bd-b462-d1c8c1404aa0)
 
