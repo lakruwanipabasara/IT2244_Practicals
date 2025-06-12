@@ -23,14 +23,19 @@ OUTPUT:
 Create code using c language.
 
 1. Get two input from user. (//parent process)
+   
 name:
+
 reg no:
+
 age:
 
-2. Print the output from the child. (//child process)
+3. Print the output from the child. (//child process)
 
 name:abc
+
 reg no: 2021/ict/01
+
 age:25
 
 
